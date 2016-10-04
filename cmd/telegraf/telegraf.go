@@ -141,7 +141,7 @@ func reloadLoop(stop chan struct{}, s service.Service) {
 				fmt.Println(v)
 				return
 			case "config":
-				config.PrintSampleConfig(inputFilters, outputFilters)
+				config.PrintSampleConfig(inputFilters, outputFilters, nil, nil)
 				return
 			}
 		}
